@@ -20,9 +20,6 @@ var stamenTerrain = new L.StamenTileLayer("terrain-background");  //replace with
 map.addLayer(stamenTerrain);
 // map.addLayer(whatcom)
 
-
-
-
 });
 
 /* Create Infoboxes from HTML Info Windows */

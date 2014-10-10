@@ -1,11 +1,11 @@
-html,body{
+html/*,body*/{
   padding:0;
   margin:0;
   height:100%;
   font-family: 'Comfortaa',arial,sans-serif !important;
   overflow: hidden;
 }
-
+/*
 #map{
   padding:0;
   border:1px solid #000;
@@ -67,7 +67,7 @@ h3 {
     font-family: 'Comfortaa',arial,sans-serif;
     font-variant: small-caps;
     font-size: 2.2em;
-    /*left: 50%;*/
+    left: 50%;
     position: absolute;
     top: 0px;
     z-index: 100;
@@ -80,7 +80,6 @@ h3 {
     font-family: 'Comfortaa',arial,sans-serif;
     font-variant:small-caps;
     font-size: 1.35em;
-    /*left: 50%;*/
     position: absolute;
     top: 42px;
     z-index: 100;
@@ -113,8 +112,6 @@ h3 {
   left:0;
   right: 0;
   background-color: rgba(30,148,143,0.71);
-  /*rgba(147,218,215, 0.75);
-  (opacity: 0.76;*/
   z-index:100;
 }
 
@@ -152,6 +149,15 @@ h3 {
   padding: 1%;
 }
 
+#salmonLegend {
+    display:none;
+    z-index: 250;
+    content:url(../images/maki_png/water-24.png);
+    left: 5em;
+    position: absolute;
+    bottom: 5em;
+}
+
 #infoBox {
     display:none;
     color: #93DAD7;
@@ -171,25 +177,126 @@ h3 {
     position: absolute;
     -top: 0.35em;
 }
+*/
 
-#aboutButton {
-    z-index: 250;
-    left: 5em;
+#modalButton {
+  /*display: inline;*/
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  /*border-color: red;*/
+  background: seagreen;
+  left: 10px;
+  bottom: 10px;
+  z-index: 99999;
+}
+
+.modalButtonStyle {
+  display: inline;
+  border-radius: 100px;
+  border-color: red;
+  background: red;
+  left: 100px;
+  bottom: 100px;
+  z-index: 99999;
+}
+
+/*#openModal{
+
+}*/
+
+.modalDialog {
     position: fixed;
-    bottom: 5em;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
 }
 
-#salmonLegend {
-    display:none;
-    z-index: 250;
-    content:url(../images/maki_png/water-24.png);
-    left: 5em;
+.modalDialog:target {
+    opacity:1;
+    pointer-events: auto;
+}
+
+.modalDialog > div {
+    width: 400px;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 10px;
+    background: #fff;
+    background: -moz-linear-gradient(#fff, #999);
+    background: -webkit-linear-gradient(#fff, #999);
+    background: -o-linear-gradient(#fff, #999);
+}
+
+.close {
+    background: #606061;
+    color: #FFFFFF;
+    line-height: 25px;
     position: absolute;
-    bottom: 5em;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    -moz-box-shadow: 1px 1px 3px #000;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000;
 }
 
-
+.close:hover {
+    background: #00d9ff;
+}
 
 .leaflet-top .leaflet-control-zoom {
   margin-top: 750px;
+}
+
+#about {
+    display:none;
+    color: rgba(255, 151, 0, 1);
+    font-family: 'Comfortaa',arial,sans-serif;
+    font-size: .5em;
+    -left: 0.25em;
+    position: absolute;
+    -top: 0.35em;
+}
+
+.aboutContent {
+  display: none;
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  width: 50%;
+  height: 50%;
+  padding: 16px;
+  border: 16px solid orange;
+  background-color: white;
+  z-index:1002;
+  overflow: auto;
+}
+
+.black_overlay {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index:1001;
+  -moz-opacity: 0.8;
+  opacity:.80;
+  filter: alpha(opacity=80);
 }

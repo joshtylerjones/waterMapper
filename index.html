@@ -1,24 +1,21 @@
 <!DOCTYPE html>
 <html>
+
   <head>
 
 <meta charset=utf-8 />
 <title>Water Mapper</title>
  
-  <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' />
-  <link href='http://fonts.googleapis.com/css?family=Syncopate:400,300' rel='stylesheet' type='text/css'/>
-  <link href='/assets/css/style.css' rel='stylesheet'/>
-  <script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.2/mapbox.js'></script>
-  <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
-  <link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.2/mapbox.css' rel='stylesheet' />
-  <!-- <link rel="stylesheet" href="css/CoverPop.css"> -->
-
-  <script src='/assets/js/leaflet.utfgrid.js'></script>
-  <script type="text/javascript" src="//maps.stamen.com/js/tile.stamen.js?v1.3.0"></script>
-  
-
-  
-  <script src='/assets/js/map.js'></script>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<link href='http://fonts.googleapis.com/css?family=Syncopate:400,300' rel='stylesheet' type='text/css'/>
+<link href='/assets/css/style.css' rel='stylesheet'/>
+<script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.2/mapbox.js'></script>
+<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+<link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.2/mapbox.css' rel='stylesheet' />
+<script src='/assets/js/leaflet.utfgrid.js'></script>
+<script type="text/javascript" src="//maps.stamen.com/js/tile.stamen.js?v1.3.0"></script>
+<script src='/assets/js/map.js'></script>
 
   </head>
 
@@ -26,13 +23,42 @@
 
 <body>
 
-<div id="map"></div>
+<!-- <div id="map"></div> -->
+<!-- <div id="modalButton" class="modalButtonStyle"></div> -->
+
+<div id="modalButton">
+<a href="#openModal"></a>
+</div>
+
+
+
+
+
+<div id="openModal" class="modalDialog">
+    <div> <a href="#close" title="Close" class="close">X</a>
+
+          <h2>Modal Box</h2>
+
+        <p>This is a sample modal box that can be created using the powers of CSS3.</p>
+        <p>You could do a lot of things here like have a pop-up ad that shows when your website loads, or create a login/register form for users.</p>
+    </div>
+</div>
+
+<!-- <div id="openModal" class="modalDialog">
+    <div> <a href="#close" title="Close" class="close">X</a>
+
+          <h2>Modal Box</h2>
+
+        <p>This is a sample modal box that can be created using the powers of CSS3.</p>
+        <p>You could do a lot of things here like have a pop-up ad that shows when your website loads, or create a login/register form for users.</p>
+    </div>
+</div> -->
+
 <!-- <div id="hover"></div> -->
+<!-- <div id="about"></div>
+<div id="aboutBackdrop" class="aboutContent"></div>
+ -->
 
-<div id="chart" class="chart"></div>
-<div id="legend" class="legend"></div>
-
-<!-- <div id="aboutButton">TEST TEST TEST</div> -->
 
 <!-- <div id="info_window" class="shadow">
    <div id="info_title"></div>
@@ -42,14 +68,14 @@
   <div id="info_title2"></div>
 </div>
  -->
-<div id="header" class="shadow">
+<!-- <div id="header" class="shadow">
   <div id="title" class="mainHeader">Webmap Testing </div>
   <div id="sub-titles" >Buiilding some stuff to test even more stuff...</div>
-</div>
+</div> -->
 
 <!-- <div id="salmonLegend"></div> -->
-
-<div class-'title'>Salmon Status by Evolutionary Significant Unit </br> and Seasonal Run Distribution</div>
+<!-- 
+<div class-'title'>Salmon Status by Evolutionary Significant Unit </br> and Seasonal Run Distribution</div> -->
 
 </body>
 
