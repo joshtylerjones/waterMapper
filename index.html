@@ -9,11 +9,14 @@
   <link href='http://fonts.googleapis.com/css?family=Syncopate:400,300' rel='stylesheet' type='text/css'/>
   <link href='/assets/css/style.css' rel='stylesheet'/>
   <script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.2/mapbox.js'></script>
+  <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
   <link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.2/mapbox.css' rel='stylesheet' />
-  <link rel="stylesheet" href="css/CoverPop.css">
+  <!-- <link rel="stylesheet" href="css/CoverPop.css"> -->
 
   <script src='/assets/js/leaflet.utfgrid.js'></script>
   <script type="text/javascript" src="//maps.stamen.com/js/tile.stamen.js?v1.3.0"></script>
+  
+
   
   <script src='/assets/js/map.js'></script>
 
@@ -24,10 +27,12 @@
 <body>
 
 <div id="map"></div>
+<!-- <div id="hover"></div> -->
 
-<div id="hover"></div>
+<div id="chart" class="chart"></div>
+<div id="legend" class="legend"></div>
 
-<div id="aboutButton">TEST TEST TEST</div>
+<!-- <div id="aboutButton">TEST TEST TEST</div> -->
 
 <!-- <div id="info_window" class="shadow">
    <div id="info_title"></div>
