@@ -1,0 +1,193 @@
+html,body{
+  padding:0;
+  margin:0;
+  height:100%;
+  font-family: 'Comfortaa',arial,sans-serif !important;
+  overflow: hidden;
+}
+
+#map{
+  padding:0;
+  border:1px solid #000;
+  height: 100% !important;
+  width: 100% !important;
+  position:absolute !important;
+}
+
+h2 {
+  margin: 0;
+  text-decoration: underline;
+  font-style: bold;
+  color: rgba(247,247,40,1);
+  font-size: 1.1em;
+}
+
+h3 {
+  margin: 0;
+  text-decoration: underline;
+  font-style: bold;
+  color: rgba(255, 57, 0, 1);
+  font-size: 1.1em;
+}
+
+.shadow {
+  -moz-box-shadow: 0 0 10px 50px #1E948F;
+  -webkit-box-shadow: 0 0 100px 50px #1E948F;
+  box-shadow: 5px 5px 20px #1E948F;
+}
+
+.shadow2{
+  -moz-box-shadow: 0 0 10px 50px rgba(127,43,7,1);
+  -webkit-box-shadow: 0 0 100px 50px rgba(127,43,7,1);
+  box-shadow: 5px 5px 20px rgba(127,43,7,1);
+}
+
+.mainHeader{
+  color: rgba(30,148,143,0.93);
+  font-family: 'Comfortaa',arial,sans-serif;
+  font-size: 2.00em;
+  left: 50%;
+  position: absolute;
+  top: 0.35em;
+  z-index: 100
+}
+
+.subHeader{
+  color: rgba(30,148,143,0.84);
+  font-family: 'Comfortaa',arial,sans-serif;
+  font-size: 1.25em;
+  left: 50%;
+  position: absolute;
+  top: 0.35em;
+  z-index: 100
+}
+
+#title {
+    color: rgba(147,218,215, 1.0);
+    font-family: 'Comfortaa',arial,sans-serif;
+    font-variant: small-caps;
+    font-size: 2.2em;
+    /*left: 50%;*/
+    position: absolute;
+    top: 0px;
+    z-index: 100;
+    position:absolute;
+    left: 100px;
+}
+
+#sub-titles {
+    color: rgba(147,218,215, 0.75);
+    font-family: 'Comfortaa',arial,sans-serif;
+    font-variant:small-caps;
+    font-size: 1.35em;
+    /*left: 50%;*/
+    position: absolute;
+    top: 42px;
+    z-index: 100;
+    position:absolute;
+    left: 100px;
+}
+
+#info_title {
+    color: #93DAD7;
+    font-family: 'Comfortaa',arial,sans-serif;
+    font-size: 1.65em;
+    -left: 0.25em;
+    position: absolute;
+    -top: 0.35em;
+}
+
+#info_title2 {
+    color: #93DAD7;
+    font-family: 'Comfortaa',arial,sans-serif;
+    font-size: 1.45em;
+    -left: 0.25em;
+    position: absolute;
+    -top: 0.35em;
+}
+
+#header {
+  position:absolute;
+  top: 0;
+  height: 75px;
+  left:0;
+  right: 0;
+  background-color: rgba(30,148,143,0.71);
+  /*rgba(147,218,215, 0.75);
+  (opacity: 0.76;*/
+  z-index:100;
+}
+
+#info_window{
+  display: none;
+  position: absolute;
+  text-align: left;
+  top: 93px;
+  right: 12px;
+  width: auto;
+  height: auto;
+  background-color: rgba(30,148,143,0.84);
+  font-family: 'Comfortaa',arial,sans-serif;
+  color: rgba(147, 218, 215,1);
+  font-size: 1em;
+  border:2px solid;
+  border-radius:25px;
+  padding: 1%;
+}
+
+#info_window2{
+  display: none;
+  position: absolute;
+  text-align: left;
+  bottom: 45px;
+  right: 12px;
+  width: auto;
+  height: auto;
+  background-color: rgba(255, 168, 64, 0.87);
+  font-family: 'Comfortaa',arial,sans-serif;
+  color: rgba(166, 37, 0, 1);
+  font-size: 1em;
+  border:2px solid;
+  border-radius:25px;
+  padding: 1%;
+}
+
+#infoBox {
+    display:none;
+    color: #93DAD7;
+    font-family: 'Comfortaa',arial,sans-serif;
+    font-size: .5em;
+    -left: 0.25em;
+    position: absolute;
+    -top: 0.35em;
+}
+
+#infoBox2 {
+    display:none;
+    color: rgba(255, 151, 0, 1);
+    font-family: 'Comfortaa',arial,sans-serif;
+    font-size: .5em;
+    -left: 0.25em;
+    position: absolute;
+    -top: 0.35em;
+}
+
+#aboutButton {
+    z-index: 250;
+    left: 5em;
+    position: fixed;
+    bottom: 5em;
+}
+
+#salmonLegend {
+    display:none;
+    z-index: 250;
+    content:url(../images/maki_png/water-24.png);
+    left: 5em;
+    position: absolute;
+    bottom: 5em;
+}
+
+.leaflet-top .leaflet-control-zoom {
+  margin-top: 750px;
+}
