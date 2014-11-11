@@ -1,11 +1,11 @@
-html/*,body*/{
+html,body{
   padding:0;
   margin:0;
   height:100%;
   font-family: 'Comfortaa',arial,sans-serif !important;
   overflow: hidden;
 }
-/*
+
 #map{
   padding:0;
   border:1px solid #000;
@@ -177,14 +177,12 @@ h3 {
     position: absolute;
     -top: 0.35em;
 }
-*/
 
+/*
 #modalButton {
-  /*display: inline;*/
   width: 100px;
   height: 100px;
   border-radius: 100px;
-  /*border-color: red;*/
   background: seagreen;
   left: 10px;
   bottom: 10px;
@@ -201,9 +199,9 @@ h3 {
   z-index: 99999;
 }
 
-/*#openModal{
+#openModal{
 
-}*/
+}
 
 .modalDialog {
     position: fixed;
@@ -300,3 +298,4 @@ h3 {
   opacity:.80;
   filter: alpha(opacity=80);
 }
+*/
